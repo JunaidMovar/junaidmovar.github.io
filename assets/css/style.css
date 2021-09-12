@@ -36,6 +36,7 @@ body {
 .nav .nav-item {
     font-size: var(--nav-font-size);
     border-radius: 5px;
+    background:transparent;
 }
 .nav-pills>li>a {
     -webkit-transition: all 0.4s linear;
