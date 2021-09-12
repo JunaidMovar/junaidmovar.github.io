@@ -1,23 +1,32 @@
-<html>
+<html ng-app="junaidMovarPortfolio">
 <head>
-    <title>Junaid Movar</title>    
+    <title>Junaid Movar {{PAGE_NAME}}</title> 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <!-- CSS LIB AREA START -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CSS LIB AREA END -->
 </head>
-<body align="center" class="" ng-app="junaidMovarPortfolio">
+<body align="center" class="">
     <div class="container container-fluid surface">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-9 pad-md-2 uname">Junaid Movar</div>
+                <div class="col-md-12">
+                    <a href="assets/favicon.jpg"><img src="assets/favicon.png" alt="Me" class="img-circle" style="width: 20%;" /></a>
+                </div>
             </div>
         </div>
-        <header class="container-fluid" style="text-align: center;align-items: center;">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">   
-                    <ul class="nav nav-pills ">
+                <div class="col-md-12 uname">Junaid Movar</div>
+            </div>
+        </div>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 centralized">
+                    <ul class="nav nav-pills pull-center">
                         <li class="nav-item"  title="Home">
                             <a href="#!/home"> <i class="fa fa-home"></i> </a>
                         </li>
@@ -48,6 +57,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 
 <!-- SCRIPT LIB AREA END -->
@@ -58,5 +68,8 @@
 <!-- CONTROLLERS START -->
 <script src="app/controllers/home-controller.js"></script>
 <script src="app/controllers/education-controller.js"></script>
+<script src="app/controllers/contact-controller.js"></script>
+<script src="app/controllers/about-controller.js"></script>
+<script src="app/controllers/experience-controller.js"></script>
 <!-- CONTROLLERS END -->
 </html>

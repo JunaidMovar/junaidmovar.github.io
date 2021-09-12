@@ -1,6 +1,13 @@
 app.config(function($routeProvider){
-    $routeProvider.otherwise('/home');
+    $routeProvider.otherwise('/');
     $routeProvider
+    .when(
+        '/', {
+            name: 'home',
+            templateUrl: 'pages/home.html',
+            controller: 'homeCtrl'
+        }
+    )
     .when(
         '/home', {
             name: 'home',
