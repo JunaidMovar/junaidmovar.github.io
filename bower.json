@@ -1,0 +1,23 @@
+{
+  "name": "junaidmovar.github.io",
+  "homepage": "https://github.com/JunaidMovar/junaidmovar.github.io",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Junaid Movar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.4",
+    "angular": "1.8.2",
+    "angular-route": "1.8.2",
+    "font-awesome": "4.0.0"
+  }
+}
