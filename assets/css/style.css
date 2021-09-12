@@ -1,0 +1,48 @@
+:root {
+    --app-back-start: rgba(0, 128, 209);
+    --app-back-end: rgb(0, 0, 0);
+    --app-font-color : #c0c0c0;
+    --nav-font-size:20px;
+    --app-hover-start: rgba(0, 128, 209,0.4);
+}
+* {
+    color:var(--app-font-color);
+}
+html {
+    margin:  0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-145deg,var(--app-back-start),var(--app-back-end));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.surface {
+    width:80%;
+    height: auto;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 10%;
+    padding-top: 5%;
+    box-shadow: 10px 10px 25px 1px rgba(20, 20, 20, 0.7);
+    border-radius: 7px;
+}
+.nav .nav-item {
+    font-size: var(--nav-font-size);
+    border-radius: 5px;
+}
+.nav-pills>li>a {
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.nav-pills>li>a:hover {
+    background: var(--app-hover-start);
+}

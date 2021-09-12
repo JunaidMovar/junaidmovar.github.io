@@ -1,25 +1,49 @@
 <html>
 <head>
-<title>Junaid Movar</title>
-
-<!-- CSS LIB AREA START -->
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-<!-- CSS LIB AREA END -->
+    <title>Junaid Movar</title>    
+    <!-- CSS LIB AREA START -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS LIB AREA END -->
 </head>
-<body align="center" class="">
-
+<body align="center" class="" ng-app="junaidMovarPortfolio">
+    <div class="container container-fluid surface">
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-md-9 align-sm-left pad-md-2">Junaid Movar</div>
+                <div class="col-md-3">   
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#!/home"><i class="fa fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!/education"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <br><br><br>
+        <div class="container-fluid" ng-view></div>
+    </div>
 </body>
-<!-- SCRIPT LIB AREA START -->
+
+
+<!-- S CRIPT LIB AREA START -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
+
 <!-- SCRIPT LIB AREA END -->
-<!-- CUSTOM SCRIPT AREA START -->
+<!-- APP CONFIGURATIONS AREA START -->
 <script src="app/app.js"></script>
 <script src="app/route.js"></script>
-<script src="app/constant.js"></script>
-<!-- CUSTOM SCRIPT AREA END -->
+<!--  APP CONFIGURATIONS AREA END -->
+<!-- CONTROLLERS START -->
+<script src="app/controllers/home-controller.js"></script>
+<script src="app/controllers/education-controller.js"></script>
+<!-- CONTROLLERS END -->
 </html>
- 
